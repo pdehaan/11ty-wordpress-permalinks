@@ -1,0 +1,15 @@
+---
+title: My First Post
+---
+
+This is page 2.
+
+{% raw %}
+<pre>
+// Option 1: Separate filters for year/month.
+"permalink": "/{{ page.date | permalink_year }}/{{ page.date | permalink_month }}/{{ page.fileSlug }}/"
+
+// Option 2: Single filter for year/month/slug.
+"permalink": "{{ page | post_permalink }}"
+</pre>
+{% endraw %}
